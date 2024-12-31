@@ -1,15 +1,23 @@
-Source: template-repository
-Section: unknown
+Source: graphviz-dot-mode
+Section: lisp
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Debian Emacsen team <debian-emacsen@lists.debian.org>
+Uploaders: David Bremner <bremner@debian.org>
+Build-Depends: debhelper-compat (= 13), dh-elpa
+Standards-Version: 4.6.2
+Homepage: https://ppareit.github.io/graphviz-dot-mode/
+Vcs-Browser: https://salsa.debian.org/emacsen-team/graphviz-dot-mode
+Vcs-Git: https://salsa.debian.org/emacsen-team/graphviz-dot-mode.git/
+Rules-Requires-Root: no
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: elpa-graphviz-dot-mode
+Architecture: all
+Depends: ${elpa:Depends}, ${misc:Depends}
+Enhances: emacs
+Description: Emacs mode for the dot-language used by graphviz
+ Graphviz is open source graph visualization software. Graph
+ visualization is a way of representing structural information as
+ diagrams of abstract graphs and networks. The Graphviz layout
+ programs take descriptions of graphs in a simple text language, and
+ make diagrams in useful formats. This package helps Emacs users edit
+ the graphviz input language.

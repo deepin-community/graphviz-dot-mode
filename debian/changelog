@@ -1,5 +1,59 @@
-template-repository (1.0-1) unstable; urgency=medium
+graphviz-dot-mode (0.4.2+git20230325.8ff793b-2) unstable; urgency=medium
 
-  * Initial release
+  * Team upload.
+  * Rebuild against dh-elpa 2.1.5.
+    Upload pushed to dgit-repos but not salsa.
+    See <https://lists.debian.org/debian-emacsen/2024/07/msg00077.html>.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Sean Whitton <spwhitton@spwhitton.name>  Thu, 25 Jul 2024 22:07:22 +0900
+
+graphviz-dot-mode (0.4.2+git20230325.8ff793b-1) unstable; urgency=medium
+
+  [ Xiyue Deng ]
+  * Sync to latest snapshot (8ff793b).
+    - Implement completion based on capf and drop company dependency.
+    - Switch to lexical-binding.
+  * Drop dependency on company in d/control now that it is capf-based.
+  * Trim trailing whitespace.
+  * Bump debhelper from old 10 to 13.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository-Browse.
+  * Update standards version to 4.6.2.  No change needed.
+  * Add Homepage in d/control.
+  * Add "Rules-Requires-Root: no" in d/control.
+  * Do not end description with a sentence end in d/control.
+  * Drop extra license file LICENSE.md.
+  * Modernize d/watch with special substitute strings to be more robust.
+  * Update upstream copyright year in d/changelog.
+  * Add Source and Upstream-Contact in d/copyright.
+
+ -- David Bremner <bremner@debian.org>  Sun, 31 Mar 2024 08:45:35 -0300
+
+graphviz-dot-mode (0.4.2-2) unstable; urgency=medium
+
+  * Drop recommends for emacs.
+  * Add manual depends on elpa-company, since upstream metadata seems
+    missing (Closes: #976663).
+
+ -- David Bremner <bremner@debian.org>  Sun, 06 Dec 2020 12:37:34 -0400
+
+graphviz-dot-mode (0.4.2-1) unstable; urgency=medium
+
+  * New upstream release
+  * Bug fix: "graphviz.el customize-mode", thanks to Kevin Ryde (Closes:
+    #714575).
+
+ -- David Bremner <bremner@debian.org>  Sun, 06 Dec 2020 08:28:54 -0400
+
+graphviz-dot-mode (0.4+41+gc456a2b-2) unstable; urgency=medium
+
+  * Team upload.
+  * Rebuild with current dh-elpa
+
+ -- David Bremner <bremner@debian.org>  Thu, 29 Aug 2019 07:11:43 -0300
+
+graphviz-dot-mode (0.4+41+gc456a2b-1) unstable; urgency=medium
+
+  * Initial release (see #902604).
+
+ -- David Bremner <bremner@debian.org>  Sat, 07 Jul 2018 08:27:16 -0300
